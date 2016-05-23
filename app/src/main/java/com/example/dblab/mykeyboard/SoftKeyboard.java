@@ -90,6 +90,8 @@ public class SoftKeyboard extends InputMethodService
 
     private String mWordSeparators;
 
+    // remove contidate...
+
     /**
      * Main initialization of the input method component.  Be sure to call
      * to super class.
