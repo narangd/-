@@ -1,4 +1,4 @@
-//package com.example.dblab.mykeyboard;
+// package com.example.dblab.mykeyboard;
 
 ///**
 // * Created by DBLAB on 2016-05-20.
@@ -24,19 +24,19 @@
 
 package com.example.dblab.mykeyboard; // package org.kandroid.app.hangulkeyboard;
 
-        import android.content.Context;
-        import android.content.res.Resources;
-        import android.graphics.Canvas;
-        import android.graphics.Paint;
-        import android.graphics.Rect;
-        import android.graphics.drawable.Drawable;
-        import android.support.v4.content.ContextCompat;
-        import android.view.GestureDetector;
-        import android.view.MotionEvent;
-        import android.view.View;
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
+import android.support.v4.content.ContextCompat;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
+import android.view.View;
 
-        import java.util.ArrayList;
-        import java.util.List;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class CandidateView extends View {
@@ -52,15 +52,17 @@ public class CandidateView extends View {
 
     private Rect mBgPadding;
 
-    private static final int MAX_SUGGESTIONS = 32;
+//    never used
+//    private static final int MAX_SUGGESTIONS = 32;
     private static final int SCROLL_PIXELS = 20;
 
-    private int[] mWordWidth = new int[MAX_SUGGESTIONS];
-    private int[] mWordX = new int[MAX_SUGGESTIONS];
+//    are written to, but never read
+//    private int[] mWordWidth = new int[MAX_SUGGESTIONS];
+//    private int[] mWordX = new int[MAX_SUGGESTIONS];
 
     private static final int X_GAP = 10;
 
-    private static final List<String> EMPTY_LIST = new ArrayList<String>();
+    private static final List<String> EMPTY_LIST = new ArrayList<>();
 
     private int mColorNormal;
     private int mColorRecommended;
@@ -76,11 +78,11 @@ public class CandidateView extends View {
 
     /**
      * Construct a CandidateView for showing suggested words for completion.
-     * @param context
+     * @param context context
      */
     public CandidateView(Context context) {
         super(context);
-        mSelectionHighlight = context.getResources().getDrawable(
+        mSelectionHighlight = ContextCompat.getDrawable(context,
                 android.R.drawable.list_selector_background);
         mSelectionHighlight.setState(new int[] {
                 android.R.attr.state_enabled,
@@ -131,7 +133,7 @@ public class CandidateView extends View {
 
     /**
      * A connection back to the service to communicate with the text field
-     * @param listener
+     * @param listener keyboard
      */
     public void setService(SoftKeyboard listener) {
         mService = listener;
@@ -142,13 +144,13 @@ public class CandidateView extends View {
         return mTotalWidth;
     }
 
+    Rect padding = new Rect();
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         int measuredWidth = resolveSize(50, widthMeasureSpec);
 
         // Get the desired height of the icon menu view (last row of items does
         // not have a divider below)
-        Rect padding = new Rect();
         mSelectionHighlight.getPadding(padding);
         final int desiredHeight = ((int)mPaint.getTextSize()) + mVerticalPadding
                 + padding.top + padding.bottom;
@@ -192,8 +194,8 @@ public class CandidateView extends View {
             float textWidth = paint.measureText(suggestion);
             final int wordWidth = (int) textWidth + X_GAP * 2;
 
-            mWordX[i] = x;
-            mWordWidth[i] = wordWidth;
+//            mWordX[i] = x;
+//            mWordWidth[i] = wordWidth;
             paint.setColor(mColorNormal);
             if (touchX + scrollX >= x && touchX + scrollX < x + wordWidth && !scrolled) {
                 if (canvas != null) {
@@ -247,17 +249,17 @@ public class CandidateView extends View {
         invalidate();
     }
 
-    public void setSuggestions(List<String> suggestions, boolean completions,
+    public void setSuggestions(List<String> suggestions, /*boolean completions,*/
                                boolean typedWordValid) {
         clear();
         if (suggestions != null) {
-            mSuggestions = new ArrayList<String>(suggestions);
+            mSuggestions = new ArrayList<>(suggestions);
         }
         mTypedWordValid = typedWordValid;
         scrollTo(0, 0);
         mTargetScrollX = 0;
         // Compute the total width
-        //super.draw(null); //draw(); // onDraw(null);
+        // super.draw(null); //draw(); // onDraw(null);
         invalidate();
         requestLayout();
     }
@@ -310,20 +312,21 @@ public class CandidateView extends View {
         return true;
     }
 
-    /**
-     * For flick through from keyboard, call this method with the x coordinate of the flick
-     * gesture.
-     * @param x
-     */
-    public void takeSuggestionAt(float x) {
-        mTouchX = (int) x;
-        // To detect candidate
-        super.draw(null); // onDraw(null);
-        if (mSelectedIndex >= 0) {
-            mService.pickSuggestionManually(mSelectedIndex);
-        }
-        invalidate();
-    }
+//    never used
+//    /**
+//     * For flick through from keyboard, call this method with the x coordinate of the flick
+//     * gesture.
+//     * @param x coordinate of the flick
+//     */
+//    public void takeSuggestionAt(float x) {
+//        mTouchX = (int) x;
+//        // To detect candidate
+//        super.draw(null); // onDraw(null);
+//        if (mSelectedIndex >= 0) {
+//            mService.pickSuggestionManually(mSelectedIndex);
+//        }
+//        invalidate();
+//    }
 
     private void removeHighlight() {
         mTouchX = OUT_OF_BOUNDS;

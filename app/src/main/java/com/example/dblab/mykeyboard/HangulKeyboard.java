@@ -19,10 +19,10 @@ public class HangulKeyboard extends Keyboard {
         super(context, xmlLayoutResId);
     }
 
-    public HangulKeyboard(Context context, int layoutTemplateResId,
-                          CharSequence characters, int columns, int horizontalPadding) {
-        super(context, layoutTemplateResId, characters, columns, horizontalPadding);
-    }
+//    public HangulKeyboard(Context context, int layoutTemplateResId,
+//                          CharSequence characters, int columns, int horizontalPadding) {
+//        super(context, layoutTemplateResId, characters, columns, horizontalPadding);
+//    }
 
     @Override
     protected Key createKeyFromXml(Resources res, Row parent, int x, int y,

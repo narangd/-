@@ -26,12 +26,10 @@ package com.example.dblab.mykeyboard;
 
 import android.content.Context;
 import android.inputmethodservice.Keyboard;
-import android.inputmethodservice.KeyboardView;
 import android.inputmethodservice.Keyboard.Key;
+import android.inputmethodservice.KeyboardView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import android.view.View;
-import android.widget.Toast;
 
 public class LatinKeyboardView extends KeyboardView {
 

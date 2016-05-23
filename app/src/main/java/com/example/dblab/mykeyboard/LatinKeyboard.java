@@ -24,15 +24,12 @@
 
 package com.example.dblab.mykeyboard; // package org.kandroid.app.hangulkeyboard;
 
-        import android.content.Context;
-        import android.content.res.Resources;
-        import android.content.res.XmlResourceParser;
-        import android.inputmethodservice.Keyboard;
-        import android.inputmethodservice.Keyboard.Key;
-        import android.inputmethodservice.Keyboard.Row;
-        import android.support.v4.content.ContextCompat;
-        import android.support.v7.app.AppCompatActivity;
-        import android.view.inputmethod.EditorInfo;
+import android.content.Context;
+import android.content.res.Resources;
+import android.content.res.XmlResourceParser;
+import android.inputmethodservice.Keyboard;
+import android.support.v4.content.ContextCompat;
+import android.view.inputmethod.EditorInfo;
 
 public class LatinKeyboard extends Keyboard {
 
@@ -42,10 +39,10 @@ public class LatinKeyboard extends Keyboard {
         super(context, xmlLayoutResId);
     }
 
-    public LatinKeyboard(Context context, int layoutTemplateResId,
-                         CharSequence characters, int columns, int horizontalPadding) {
-        super(context, layoutTemplateResId, characters, columns, horizontalPadding);
-    }
+//    public LatinKeyboard(Context context, int layoutTemplateResId,
+//                         CharSequence characters, int columns, int horizontalPadding) {
+//        super(context, layoutTemplateResId, characters, columns, horizontalPadding);
+//    }
 
     @Override
     protected Key createKeyFromXml(Resources res, Row parent, int x, int y,

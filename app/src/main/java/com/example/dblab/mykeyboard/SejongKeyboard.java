@@ -19,10 +19,10 @@ public class SejongKeyboard extends Keyboard {
         super(context, xmlLayoutResId);
     }
 
-    public SejongKeyboard(Context context, int layoutTemplateResId,
-                          CharSequence characters, int columns, int horizontalPadding) {
-        super(context, layoutTemplateResId, characters, columns, horizontalPadding);
-    }
+//    public SejongKeyboard(Context context, int layoutTemplateResId,
+//                          CharSequence characters, int columns, int horizontalPadding) {
+//        super(context, layoutTemplateResId, characters, columns, horizontalPadding);
+//    }
 
     @Override
     protected Key createKeyFromXml(Resources res, Row parent, int x, int y,
