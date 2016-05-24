@@ -1,3 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="D:\android\MyKeyboard\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="D:\android\MyKeyboard\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_c004ed3896f5f4958d1a7144f4676a6f58498a01.jar" />
+    </item>
+    <item
+        jar="D:\android\MyKeyboard\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="717eef369a1c155829daefdd95382a376236d2fd">
+        <dex dex="D:\android\MyKeyboard\app\build\intermediates\pre-dexed\debug\instant-run_11f1181d1257e2a3564140b7663e2a9266ca6620.jar" />
+    </item>
+    <item
+        jar="D:\android\MyKeyboard\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="D:\android\MyKeyboard\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_78f05436c9f48d68a8c0bed2f274328241996592.jar" />
+    </item>
+    <item
+        jar="D:\android\MyKeyboard\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d8f502ddafcf9236275944c4829ec41d7058b72e">
+        <dex dex="D:\android\MyKeyboard\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_0fbe065082e1b1fb50a5105701f03e4b2e4f0347.jar" />
+    </item>
+    <item
+        jar="C:\Users\DBLAB\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="D:\android\MyKeyboard\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_d18f2a44c456983b713fea5e0a006f2c6b8b82d3.jar" />
+    </item>
+    <item
+        jar="D:\android\MyKeyboard\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="D:\android\MyKeyboard\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_3e69b6242194a9f4d3bd5fb1afae64411ad4a189.jar" />
+    </item>
+    <item
+        jar="D:\android\MyKeyboard\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="D:\android\MyKeyboard\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_a0b3f7b002ffc380627aaebcc869113228f5e1d4.jar" />
+    </item>
+    <item
+        jar="D:\android\MyKeyboard\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="D:\android\MyKeyboard\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_cbf7818bd38fbc471f6c5512cb9d73cbcd7d9380.jar" />
+    </item>
+
+</items>
